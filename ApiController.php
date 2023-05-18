@@ -12,7 +12,7 @@ class ApiController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index1()
     {
         return User::get()->toJson();
         return response()->json(["code" => "1","message" => "Success."], 200);
